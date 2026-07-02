@@ -245,9 +245,7 @@ export default function Home() {
             <a href="https://github.com/khushbooyd-coder" className={styles.contactBtn} target="_blank" rel="noopener noreferrer">
               <i className="ti ti-brand-github" aria-hidden="true" /> GitHub
             </a>
-            <a href="mailto:khushbooyd@gmail.com" className={styles.contactBtn}>
-              <i className="ti ti-mail" aria-hidden="true" /> Email me
-            </a>
+            
             <a href="https://postpilot-ai-self.vercel.app" className={styles.contactBtn} target="_blank" rel="noopener noreferrer">
               <i className="ti ti-rocket" aria-hidden="true" /> PostPilot AI
             </a>
