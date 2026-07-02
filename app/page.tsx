@@ -3,20 +3,28 @@
 import { useEffect, useRef } from 'react'
 import styles from './page.module.css'
 
+function Logo({ size = 38 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+      <rect width="38" height="38" rx="10" fill="#0F172A"/>
+      <path d="M6 12L14 19L6 26" stroke="#2563EB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M18 26H32" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    </svg>
+  )
+}
+
 export default function Home() {
   const s1Ref = useRef<HTMLSpanElement>(null)
   const s2Ref = useRef<HTMLSpanElement>(null)
   const s3Ref = useRef<HTMLSpanElement>(null)
 
   useEffect(() => {
-    // Scroll reveal
     const reveals = document.querySelectorAll('.reveal')
     const io = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('revealed') })
     }, { threshold: 0.1 })
     reveals.forEach(r => io.observe(r))
 
-    // Count up animation
     function animateCount(el: HTMLSpanElement, target: number, suffix = '') {
       let s = 0
       const step = target / (1500 / 16)
@@ -50,7 +58,7 @@ export default function Home() {
       {/* Nav */}
       <nav className={styles.nav}>
         <div className={styles.logo}>
-          <i className="ti ti-code" aria-hidden="true" />
+          <Logo size={34} />
           Code<em>Pilot</em> Labs
         </div>
         <div className={styles.navLinks}>
@@ -84,8 +92,8 @@ export default function Home() {
             <a href="#products" className={styles.btnP}>
               <i className="ti ti-rocket" aria-hidden="true" /> See my work
             </a>
-            <a href="https://github.com/khushbooyd-coder" className={styles.btnS}>
-              <i className="ti ti-brand-github" aria-hidden="true" /> GitHub
+            <a href="https://www.linkedin.com/in/khushboo-dahat-230035345/" className={styles.btnS} target="_blank" rel="noopener noreferrer">
+              <i className="ti ti-brand-linkedin" aria-hidden="true" /> Connect on LinkedIn
             </a>
           </div>
           <div className={styles.pills}>
@@ -154,7 +162,7 @@ export default function Home() {
               <div className={styles.prodTags}>
                 {['Next.js','Supabase','Claude AI','Vercel'].map(t => <span key={t} className={styles.prodTag}>{t}</span>)}
               </div>
-              <a href="https://postpilot-ai-self.vercel.app" className={styles.prodLink}>
+              <a href="https://postpilot-ai-self.vercel.app" className={styles.prodLink} target="_blank" rel="noopener noreferrer">
                 <i className="ti ti-external-link" aria-hidden="true" /> postpilot-ai-self.vercel.app
               </a>
             </div>
@@ -171,7 +179,7 @@ export default function Home() {
               <div className={styles.prodTags}>
                 {['WordPress','PHP','OpenAI','WooCommerce'].map(t => <span key={t} className={styles.prodTag}>{t}</span>)}
               </div>
-              <a href="https://github.com/khushbooyd-coder" className={styles.prodLink}>
+              <a href="https://github.com/khushbooyd-coder" className={styles.prodLink} target="_blank" rel="noopener noreferrer">
                 <i className="ti ti-brand-github" aria-hidden="true" /> View on GitHub
               </a>
             </div>
@@ -229,15 +237,18 @@ export default function Home() {
         <h2 className={styles.sTitle}>Let&apos;s connect</h2>
         <div className={styles.contactWrap}>
           <h3>Open to work & collabs</h3>
-          <p>Freelance projects, SaaS collaborations, WordPress plugins — if you have an interesting idea, let&apos;s talk!</p>
+          <p>Freelance projects, SaaS collaborations, WordPress plugins — if you have an interesting idea, let&apos;s connect on LinkedIn!</p>
           <div className={styles.contactRow}>
-            <a href="https://github.com/khushbooyd-coder" className={styles.contactBtn}>
+            <a href="https://www.linkedin.com/in/khushboo-dahat-230035345/" className={styles.contactBtn} target="_blank" rel="noopener noreferrer">
+              <i className="ti ti-brand-linkedin" aria-hidden="true" /> LinkedIn
+            </a>
+            <a href="https://github.com/khushbooyd-coder" className={styles.contactBtn} target="_blank" rel="noopener noreferrer">
               <i className="ti ti-brand-github" aria-hidden="true" /> GitHub
             </a>
             <a href="mailto:khushbooyd@gmail.com" className={styles.contactBtn}>
               <i className="ti ti-mail" aria-hidden="true" /> Email me
             </a>
-            <a href="https://postpilot-ai-self.vercel.app" className={styles.contactBtn}>
+            <a href="https://postpilot-ai-self.vercel.app" className={styles.contactBtn} target="_blank" rel="noopener noreferrer">
               <i className="ti ti-rocket" aria-hidden="true" /> PostPilot AI
             </a>
           </div>

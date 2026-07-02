@@ -8,10 +8,16 @@ const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space
 export const metadata: Metadata = {
   title: 'CodePilot Labs — Building products that solve real problems',
   description: 'Full-stack developer & indie builder. Building SaaS products, WordPress plugins, and AI-powered tools.',
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   openGraph: {
     title: 'CodePilot Labs',
     description: 'Full-stack developer & indie builder — SaaS, WordPress plugins, AI tools.',
     type: 'website',
+    url: 'https://codepilot-labs.vercel.app',
   },
 }
 
