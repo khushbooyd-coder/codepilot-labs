@@ -40,9 +40,9 @@ export default function Home() {
       const so = new IntersectionObserver(entries => {
         entries.forEach(e => {
           if (e.isIntersecting) {
-            if (s1Ref.current) animateCount(s1Ref.current, 5, '+')
-            if (s2Ref.current) animateCount(s2Ref.current, 4, '+')
-            if (s3Ref.current) animateCount(s3Ref.current, 3, '+')
+            if (s1Ref.current) animateCount(s1Ref.current, 7, '+')
+            if (s2Ref.current) animateCount(s2Ref.current, 40, '+')
+            if (s3Ref.current) animateCount(s3Ref.current, 30, '+')
             so.disconnect()
           }
         })
@@ -85,8 +85,8 @@ export default function Home() {
             that solve real problems<span className={styles.cursor} />
           </h1>
           <p className={styles.heroSub}>
-            CodePilot Labs builds AI-powered SaaS products, WordPress plugins and
-            developer tools — small, focused software that does one job well.
+            For 7+ years we&apos;ve built custom websites, Shopify and WooCommerce stores
+            and WordPress plugins. Today we also build AI-powered products and automation.
           </p>
           <div className={styles.heroBtns}>
             <a href="#products" className={styles.btnP}>
@@ -102,6 +102,8 @@ export default function Home() {
             <span className={`${styles.pill} ${styles.pillTeal}`}><i className="ti ti-database" aria-hidden="true" /> Supabase</span>
             <span className={`${styles.pill} ${styles.pillWarn}`}><i className="ti ti-brand-python" aria-hidden="true" /> FastAPI</span>
             <span className={`${styles.pill} ${styles.pillBlue}`}><i className="ti ti-brand-wordpress" aria-hidden="true" /> WordPress</span>
+            <span className={`${styles.pill} ${styles.pillTeal}`}><i className="ti ti-shopping-bag" aria-hidden="true" /> Shopify</span>
+            <span className={`${styles.pill} ${styles.pillWarn}`}><i className="ti ti-shopping-cart" aria-hidden="true" /> WooCommerce</span>
             <span className={`${styles.pill} ${styles.pillPurple}`}><i className="ti ti-brand-typescript" aria-hidden="true" /> TypeScript</span>
           </div>
         </div>
@@ -110,9 +112,9 @@ export default function Home() {
       {/* Stats */}
       <div className={styles.statsBar}>
         <div className={styles.statsInner}>
-          <div><span className={styles.statNum} ref={s1Ref}>0</span><span className={styles.statLabel}>Products shipped</span></div>
-          <div><span className={styles.statNum} ref={s2Ref}>0</span><span className={styles.statLabel}>WordPress plugins</span></div>
-          <div><span className={styles.statNum} ref={s3Ref}>0</span><span className={styles.statLabel}>Years building</span></div>
+          <div><span className={styles.statNum} ref={s1Ref}>0</span><span className={styles.statLabel}>Years building websites</span></div>
+          <div><span className={styles.statNum} ref={s2Ref}>0</span><span className={styles.statLabel}>Websites built</span></div>
+          <div><span className={styles.statNum} ref={s3Ref}>0</span><span className={styles.statLabel}>Plugins built</span></div>
         </div>
       </div>
 
@@ -122,24 +124,34 @@ export default function Home() {
         <h2 className={styles.sTitle}>What we do</h2>
         <div className={styles.aboutGrid}>
           <div className={`${styles.aboutCard} ${styles.acBlue}`}>
-            <i className="ti ti-device-desktop" aria-hidden="true" />
-            <h3>Full-stack development</h3>
-            <p>Next.js, React, Node.js and FastAPI — complete web apps, from first idea to production.</p>
-          </div>
-          <div className={`${styles.aboutCard} ${styles.acPurple}`}>
-            <i className="ti ti-robot" aria-hidden="true" />
-            <h3>AI integration</h3>
-            <p>We build AI into products that people use every day — not just demos.</p>
+            <i className="ti ti-world-www" aria-hidden="true" />
+            <h3>Custom websites</h3>
+            <p>40+ websites built over 7 years — custom-coded sites, WordPress builds and landing pages, made to fit each business.</p>
           </div>
           <div className={`${styles.aboutCard} ${styles.acTeal}`}>
-            <i className="ti ti-brand-wordpress" aria-hidden="true" />
+            <i className="ti ti-shopping-bag" aria-hidden="true" />
+            <h3>Shopify &amp; WooCommerce</h3>
+            <p>Online stores on Shopify and WooCommerce — setup, custom themes, product pages and checkout changes.</p>
+          </div>
+          <div className={`${styles.aboutCard} ${styles.acPurple}`}>
+            <i className="ti ti-puzzle" aria-hidden="true" />
             <h3>WordPress plugins</h3>
-            <p>Custom WordPress and WooCommerce plugins — from media optimizers to AI SEO writers.</p>
+            <p>30+ custom plugins built, from media optimizers to AI SEO writers, plus changes to existing plugins and themes.</p>
           </div>
           <div className={`${styles.aboutCard} ${styles.acWarn}`}>
+            <i className="ti ti-robot" aria-hidden="true" />
+            <h3>AI &amp; automation</h3>
+            <p>AI features and automated workflows — content generation, CRM and email sync, and scheduled jobs that run on their own.</p>
+          </div>
+          <div className={`${styles.aboutCard} ${styles.acTeal}`}>
+            <i className="ti ti-tool" aria-hidden="true" />
+            <h3>Changes &amp; fixes</h3>
+            <p>Updates, bug fixes, speed improvements and new features for websites you already have.</p>
+          </div>
+          <div className={`${styles.aboutCard} ${styles.acBlue}`}>
             <i className="ti ti-chart-line" aria-hidden="true" />
             <h3>SaaS products</h3>
-            <p>Our own SaaS products, designed, built and run in-house, with real users in mind.</p>
+            <p>Our own products, like PostPilot AI, designed, built and run in-house.</p>
           </div>
         </div>
       </div>
@@ -221,6 +233,8 @@ export default function Home() {
             { icon: 'ti-fire', label: 'Firebase' },
             { icon: 'ti-server', label: 'Node.js' },
             { icon: 'ti-brand-php', label: 'PHP' },
+            { icon: 'ti-shopping-bag', label: 'Shopify' },
+            { icon: 'ti-shopping-cart', label: 'WooCommerce' },
           ].map(s => (
             <div key={s.label} className={styles.skill}>
               <i className={`ti ${s.icon}`} aria-hidden="true" /> {s.label}
@@ -237,7 +251,7 @@ export default function Home() {
         <h2 className={styles.sTitle}>Work with us</h2>
         <div className={styles.contactWrap}>
           <h3>Have a project in mind?</h3>
-          <p>Custom web apps, SaaS ideas, WordPress plugins or AI features — email us and we&apos;ll get back to you.</p>
+          <p>A new website, a Shopify or WooCommerce store, a custom plugin, AI automation, or changes to a site you already have — email us and we&apos;ll get back to you.</p>
           <div className={styles.contactRow}>
             <a href="mailto:hello@codepilot-labs.com" className={styles.contactBtn}>
               <i className="ti ti-mail" aria-hidden="true" /> hello@codepilot-labs.com
