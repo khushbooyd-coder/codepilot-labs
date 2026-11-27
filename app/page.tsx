@@ -210,6 +210,71 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <div className={`${styles.productCard} ${styles.pcPurple}`}>
+            <div className={styles.prodIcon}><i className="ti ti-spray" aria-hidden="true" /></div>
+            <div className={styles.prodBody}>
+              <div className={styles.prodTop}>
+                <span className={styles.prodName}>Eau Positive</span>
+                <span className={styles.bLive}>Live</span>
+              </div>
+              <p className={styles.prodDesc}>Online store for authentic perfumes — brand-new bottles, decants and partials. Custom WooCommerce theme built from scratch: 4-column shop grid, product pages with image gallery and accordion details, related and recently viewed products, and brand artwork.</p>
+              <div className={styles.prodTags}>
+                {['WordPress','WooCommerce','PHP','Custom theme'].map(t => <span key={t} className={styles.prodTag}>{t}</span>)}
+              </div>
+              <a href="https://eaupositive.in" className={styles.prodLink} target="_blank" rel="noopener noreferrer">
+                <i className="ti ti-external-link" aria-hidden="true" /> eaupositive.in
+              </a>
+            </div>
+          </div>
+
+          <div className={`${styles.productCard} ${styles.pcTeal}`}>
+            <div className={styles.prodIcon}><i className="ti ti-speakerphone" aria-hidden="true" /></div>
+            <div className={styles.prodBody}>
+              <div className={styles.prodTop}>
+                <span className={styles.prodName}>Brucke AI</span>
+                <span className={styles.bLive}>Live</span>
+              </div>
+              <p className={styles.prodDesc}>AI platform for executive event marketing — event campaigns, prospect discovery and automated outreach in one place.</p>
+              <div className={styles.prodTags}>
+                {['Next.js','AI','Supabase'].map(t => <span key={t} className={styles.prodTag}>{t}</span>)}
+              </div>
+              <a href="https://brucke-ai.vercel.app" className={styles.prodLink} target="_blank" rel="noopener noreferrer">
+                <i className="ti ti-external-link" aria-hidden="true" /> brucke-ai.vercel.app
+              </a>
+            </div>
+          </div>
+
+          <div className={`${styles.productCard} ${styles.pcBlue}`}>
+            <div className={styles.prodIcon}><i className="ti ti-backpack" aria-hidden="true" /></div>
+            <div className={styles.prodBody}>
+              <div className={styles.prodTop}>
+                <span className={styles.prodName}>Bragpacker</span>
+                <span className={styles.bDone}>Client project</span>
+              </div>
+              <p className={styles.prodDesc}>WooCommerce store for renting and buying travel gear in Mumbai, Pune and Delhi. Built custom plugins for split Buy/Rental checkout, city-based rental booking with dates, a rental inventory dashboard, and GST and order exports.</p>
+              <div className={styles.prodTags}>
+                {['WordPress','WooCommerce','PHP'].map(t => <span key={t} className={styles.prodTag}>{t}</span>)}
+              </div>
+              <a href="https://www.bragpacker.com" className={styles.prodLink} target="_blank" rel="noopener noreferrer">
+                <i className="ti ti-external-link" aria-hidden="true" /> bragpacker.com
+              </a>
+            </div>
+          </div>
+
+          <div className={`${styles.productCard} ${styles.pcPurple}`}>
+            <div className={styles.prodIcon}><i className="ti ti-world-www" aria-hidden="true" /></div>
+            <div className={styles.prodBody}>
+              <div className={styles.prodTop}>
+                <span className={styles.prodName}>Client websites</span>
+                <span className={styles.bDone}>Client work</span>
+              </div>
+              <p className={styles.prodDesc}>Ongoing development and maintenance for client sites including Zanskar, ZaaZaa, International Legal Alliance and www-sync.com — responsive layouts, SEO and structured data, performance and security fixes.</p>
+              <div className={styles.prodTags}>
+                {['WordPress','CSS','SEO','Performance'].map(t => <span key={t} className={styles.prodTag}>{t}</span>)}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
