@@ -63,10 +63,10 @@ export default function Home() {
         </div>
         <div className={styles.navLinks}>
           <a href="#products">Products</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-          <a href="https://github.com/khushbooyd-coder" className={styles.navCta}>
-            <i className="ti ti-brand-github" aria-hidden="true" /> GitHub
+          <a href="#about">Services</a>
+          <a href="#skills">Stack</a>
+          <a href="#contact" className={styles.navCta}>
+            <i className="ti ti-mail" aria-hidden="true" /> Contact us
           </a>
         </div>
       </nav>
@@ -78,22 +78,22 @@ export default function Home() {
         <div className={styles.blob3} />
         <div className={styles.hero}>
           <div className={styles.heroBadge}>
-            <i className="ti ti-sparkles" aria-hidden="true" /> Full-stack developer & indie builder
+            <i className="ti ti-sparkles" aria-hidden="true" /> Indie software studio · Nagpur, India
           </div>
           <h1>
             Building <em>products</em><br />
             that solve real problems<span className={styles.cursor} />
           </h1>
           <p className={styles.heroSub}>
-            Hi, I&apos;m Khushboo — a full-stack developer who builds SaaS products,
-            WordPress plugins, and AI-powered tools. Welcome to my lab.
+            CodePilot Labs builds AI-powered SaaS products, WordPress plugins and
+            developer tools — small, focused software that does one job well.
           </p>
           <div className={styles.heroBtns}>
             <a href="#products" className={styles.btnP}>
-              <i className="ti ti-rocket" aria-hidden="true" /> See my work
+              <i className="ti ti-rocket" aria-hidden="true" /> See our products
             </a>
-            <a href="https://www.linkedin.com/in/khushboo-dahat-230035345/" className={styles.btnS} target="_blank" rel="noopener noreferrer">
-              <i className="ti ti-brand-linkedin" aria-hidden="true" /> Connect on LinkedIn
+            <a href="https://www.linkedin.com/company/135194800/" className={styles.btnS} target="_blank" rel="noopener noreferrer">
+              <i className="ti ti-brand-linkedin" aria-hidden="true" /> Follow on LinkedIn
             </a>
           </div>
           <div className={styles.pills}>
@@ -118,28 +118,28 @@ export default function Home() {
 
       {/* About */}
       <div className={`${styles.section} reveal`} id="about">
-        <p className={styles.sLabel}>About</p>
-        <h2 className={styles.sTitle}>What I do</h2>
+        <p className={styles.sLabel}>Services</p>
+        <h2 className={styles.sTitle}>What we do</h2>
         <div className={styles.aboutGrid}>
           <div className={`${styles.aboutCard} ${styles.acBlue}`}>
             <i className="ti ti-device-desktop" aria-hidden="true" />
             <h3>Full-stack development</h3>
-            <p>Next.js, React, Node.js, FastAPI — building complete web apps from scratch to production.</p>
+            <p>Next.js, React, Node.js and FastAPI — complete web apps, from first idea to production.</p>
           </div>
           <div className={`${styles.aboutCard} ${styles.acPurple}`}>
             <i className="ti ti-robot" aria-hidden="true" />
             <h3>AI integration</h3>
-            <p>Integrating Claude, OpenAI into products that solve real problems — not just cool demos.</p>
+            <p>We build AI into products that people use every day — not just demos.</p>
           </div>
           <div className={`${styles.aboutCard} ${styles.acTeal}`}>
             <i className="ti ti-brand-wordpress" aria-hidden="true" />
             <h3>WordPress plugins</h3>
-            <p>Custom WordPress & WooCommerce plugins — from media optimizers to AI SEO writers.</p>
+            <p>Custom WordPress and WooCommerce plugins — from media optimizers to AI SEO writers.</p>
           </div>
           <div className={`${styles.aboutCard} ${styles.acWarn}`}>
             <i className="ti ti-chart-line" aria-hidden="true" />
             <h3>SaaS products</h3>
-            <p>Shipping indie SaaS products — from idea to deployment, with real users in mind.</p>
+            <p>Our own SaaS products, designed, built and run in-house, with real users in mind.</p>
           </div>
         </div>
       </div>
@@ -149,7 +149,7 @@ export default function Home() {
       {/* Products */}
       <div className={`${styles.section} reveal`} id="products">
         <p className={styles.sLabel}>Products</p>
-        <h2 className={styles.sTitle}>What I&apos;ve built</h2>
+        <h2 className={styles.sTitle}>What we&apos;ve built</h2>
         <div className={styles.productsGrid}>
           <div className={`${styles.productCard} ${styles.pcBlue}`}>
             <div className={styles.prodIcon}><i className="ti ti-brand-linkedin" aria-hidden="true" /></div>
@@ -158,12 +158,12 @@ export default function Home() {
                 <span className={styles.prodName}>PostPilot AI</span>
                 <span className={styles.bLive}>Live</span>
               </div>
-              <p className={styles.prodDesc}>AI-powered LinkedIn auto-posting SaaS. Writes and publishes daily posts tuned to your niche, tone, and audience — completely hands-free.</p>
+              <p className={styles.prodDesc}>AI LinkedIn assistant. Writes a post every day on the topics and tone you choose and publishes it at 8:30 AM IST. Approve the posts you like, or let it run on its own. 5-day free trial.</p>
               <div className={styles.prodTags}>
-                {['Next.js','Supabase','Claude AI','Vercel'].map(t => <span key={t} className={styles.prodTag}>{t}</span>)}
+                {['Next.js','Supabase','Groq (Llama)','Vercel'].map(t => <span key={t} className={styles.prodTag}>{t}</span>)}
               </div>
-              <a href="https://postpilot-ai-self.vercel.app" className={styles.prodLink} target="_blank" rel="noopener noreferrer">
-                <i className="ti ti-external-link" aria-hidden="true" /> postpilot-ai-self.vercel.app
+              <a href="https://postpilot.codepilot-labs.com" className={styles.prodLink} target="_blank" rel="noopener noreferrer">
+                <i className="ti ti-external-link" aria-hidden="true" /> postpilot.codepilot-labs.com
               </a>
             </div>
           </div>
@@ -192,7 +192,7 @@ export default function Home() {
                 <span className={styles.prodName}>Cresco AI</span>
                 <span className={styles.bDone}>Delivered</span>
               </div>
-              <p className={styles.prodDesc}>Event marketing automation platform with Apollo.io prospect discovery, SendGrid campaigns, HubSpot CRM sync, and LinkedIn post generation.</p>
+              <p className={styles.prodDesc}>Client project: an event marketing automation platform with Apollo.io prospect discovery, SendGrid campaigns, HubSpot CRM sync and LinkedIn post generation.</p>
               <div className={styles.prodTags}>
                 {['Next.js','FastAPI','Supabase','Railway'].map(t => <span key={t} className={styles.prodTag}>{t}</span>)}
               </div>
@@ -205,8 +205,8 @@ export default function Home() {
 
       {/* Skills */}
       <div className={`${styles.section} reveal`} id="skills">
-        <p className={styles.sLabel}>Skills</p>
-        <h2 className={styles.sTitle}>Tech stack</h2>
+        <p className={styles.sLabel}>Stack</p>
+        <h2 className={styles.sTitle}>Tools we build with</h2>
         <div className={styles.skillsGrid}>
           {[
             { icon: 'ti-brand-nextjs', label: 'Next.js' },
@@ -234,19 +234,24 @@ export default function Home() {
       {/* Contact */}
       <div className={`${styles.section} reveal`} id="contact">
         <p className={styles.sLabel}>Contact</p>
-        <h2 className={styles.sTitle}>Let&apos;s connect</h2>
+        <h2 className={styles.sTitle}>Work with us</h2>
         <div className={styles.contactWrap}>
-          <h3>Open to work & collabs</h3>
-          <p>Freelance projects, SaaS collaborations, WordPress plugins — if you have an interesting idea, let&apos;s connect on LinkedIn!</p>
+          <h3>Have a project in mind?</h3>
+          <p>Custom web apps, SaaS ideas, WordPress plugins or AI features — email us and we&apos;ll get back to you.</p>
           <div className={styles.contactRow}>
+            <a href="mailto:hello@codepilot-labs.com" className={styles.contactBtn}>
+              <i className="ti ti-mail" aria-hidden="true" /> hello@codepilot-labs.com
+            </a>
+            <a href="https://www.linkedin.com/company/135194800/" className={styles.contactBtn} target="_blank" rel="noopener noreferrer">
+              <i className="ti ti-building" aria-hidden="true" /> LinkedIn Page
+            </a>
             <a href="https://www.linkedin.com/in/khushboo-dahat-230035345/" className={styles.contactBtn} target="_blank" rel="noopener noreferrer">
-              <i className="ti ti-brand-linkedin" aria-hidden="true" /> LinkedIn
+              <i className="ti ti-brand-linkedin" aria-hidden="true" /> Founder on LinkedIn
             </a>
             <a href="https://github.com/khushbooyd-coder" className={styles.contactBtn} target="_blank" rel="noopener noreferrer">
               <i className="ti ti-brand-github" aria-hidden="true" /> GitHub
             </a>
-            
-            <a href="https://postpilot-ai-self.vercel.app" className={styles.contactBtn} target="_blank" rel="noopener noreferrer">
+            <a href="https://postpilot.codepilot-labs.com" className={styles.contactBtn} target="_blank" rel="noopener noreferrer">
               <i className="ti ti-rocket" aria-hidden="true" /> PostPilot AI
             </a>
           </div>
@@ -254,7 +259,7 @@ export default function Home() {
       </div>
 
       <footer className={styles.footer}>
-        © 2025 CodePilot Labs · Built with ♥ by Khushboo Dongre
+        © {new Date().getFullYear()} CodePilot Labs · Nagpur, India · Founded by Khushboo Dahat
       </footer>
     </main>
   )
