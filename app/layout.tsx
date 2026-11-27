@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-space' })
 
 export const metadata: Metadata = {
-  title: 'CodePilot Labs — Building products that solve real problems',
-  description: 'Full-stack developer & indie builder. Building SaaS products, WordPress plugins, and AI-powered tools.',
+  title: 'CodePilot Labs — AI-powered SaaS, WordPress plugins and developer tools',
+  description: 'CodePilot Labs is an indie software studio in Nagpur, India, building AI-powered SaaS products, WordPress plugins and developer tools.',
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
@@ -15,9 +15,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'CodePilot Labs',
-    description: 'Full-stack developer & indie builder — SaaS, WordPress plugins, AI tools.',
+    description: 'Indie software studio building AI-powered SaaS, WordPress plugins and developer tools.',
     type: 'website',
-    url: 'https://codepilot-labs.vercel.app',
+    url: 'https://www.codepilot-labs.com',
   },
 }
 
